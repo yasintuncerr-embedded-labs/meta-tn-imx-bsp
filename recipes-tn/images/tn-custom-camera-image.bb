@@ -16,7 +16,6 @@ IMAGE_INSTALL += " \
 # VPU (Hantro) and Multimedia (GStreamer, V4L2)
 IMAGE_INSTALL += " \
     imx-vpu-hantro \
-    firmware-imx-vpu-imx8mp \
     v4l-utils \
     gstreamer1.0 \
     gstreamer1.0-plugins-base \
@@ -27,7 +26,6 @@ IMAGE_INSTALL += " \
 # Wi-Fi (NXP 8997 PCIe), Hotspot and Network
 IMAGE_INSTALL += " \
     linux-firmware-pcie8997 \
-    kernel-module-mwifiex-pcie \
     wpa-supplicant \
     hostapd \
     iw \
