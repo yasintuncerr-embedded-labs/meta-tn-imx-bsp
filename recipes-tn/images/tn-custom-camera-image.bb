@@ -63,4 +63,12 @@ IMAGE_INSTALL:remove = " \
     packagegroup-tn-wlan \
     get-support-info \
     glmark2 \
+    bluez5 \
+    ofono \
+    avahi-daemon \
+    rpcbind \
+    busybox-syslog \
+    busybox-klogd \
 "
+
+DISTRO_FEATURES:remove = "bluetooth nfc zeroconf 3g nfs"
