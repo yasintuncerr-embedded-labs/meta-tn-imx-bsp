@@ -23,7 +23,6 @@ IMAGE_INSTALL += " \
     gstreamer1.0-plugins-base \
     gstreamer1.0-plugins-good \
     gstreamer1.0-plugins-bad \
-    
 "
 
 # Wi-Fi (NXP 8997 PCIe), Hotspot and Network
