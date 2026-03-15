@@ -226,6 +226,9 @@ EOF
     if ! grep -Fq "meta-tn-imx-bsp/recipes-containers/docker/docker-ce_%.bbappend" $PWD/conf/local.conf; then
       echo "BBMASK += \"meta-tn-imx-bsp/recipes-containers/docker/docker-ce_%.bbappend\"" >> $PWD/conf/local.conf
     fi
+    if ! grep -Fq "meta-tn-imx-bsp/recipes-containers/docker-compose/docker-compose_%.bbappend" $PWD/conf/local.conf; then
+      echo "BBMASK += \"meta-tn-imx-bsp/recipes-containers/docker-compose/docker-compose_%.bbappend\"" >> $PWD/conf/local.conf
+    fi
     # for boot2qt
     if grep -Fq "DISTRO ?= \"b2qt\"" $PWD/conf/local.conf; then
       if ! grep -Fq "meta-tn-imx-bsp/recipes-graphics/wayland/weston_%.bbappend" $PWD/conf/local.conf; then
