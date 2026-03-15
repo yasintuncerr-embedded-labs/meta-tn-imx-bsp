@@ -23,6 +23,7 @@ IMAGE_INSTALL += " \
     gstreamer1.0-plugins-base \
     gstreamer1.0-plugins-good \
     gstreamer1.0-plugins-bad \
+    
 "
 
 # Wi-Fi (NXP 8997 PCIe), Hotspot and Network
@@ -32,6 +33,8 @@ IMAGE_INSTALL += " \
     hostapd \
     iw \
     iproute2 \
+    p2p-stream \
+    p2p-wifi-direct \
 "
 
 # Camera Kernel Modules and TechNexion Drivers
