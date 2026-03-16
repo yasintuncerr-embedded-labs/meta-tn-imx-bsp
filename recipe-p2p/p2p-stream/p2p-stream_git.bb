@@ -23,6 +23,10 @@ do_install:append() {
         install -d ${D}${bindir}
         mv ${D}/usr/local/bin/p2p-stream ${D}${bindir}/p2p-stream
     fi
+    # Remove empty /usr/local leftovers so QA does not flag unshipped directories.
+    if [ -d ${D}/usr/local ]; then
+        rm -rf ${D}/usr/local
+    fi
 
     install -d ${D}${sysconfdir}/default
     install -m 0644 ${S}/config/video-node.env ${D}${sysconfdir}/default/video-node
